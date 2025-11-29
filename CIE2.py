@@ -1,18 +1,12 @@
 import sys
 
-if (sys.argv == 4):
-    print("Usage: python CIE2.py <distance> <time>")
-    script_name = (sys.argv[0])
+if len(sys.argv) == 3:
     distance = float(sys.argv[1])
     time = float(sys.argv[2])
-    speed = float(sys.argv[3])
-    sys.exit(1)
-
-else: 
-    script_name = (sys.argv[0])
+else:
+    print("Usage: python CIE2.py <distance> <time>")
     distance = 1000
-    time = 160
+    time = 260
 
-    speed = distance / time
-
-    print(f"The calculated speed = {speed:.2f}")
+speed = distance / time
+print(f"The calculated speed = {speed:.2f}")
