@@ -13,4 +13,4 @@ else:
 
     speed = distance / time
 
-    print("The calculated speed is: ",{speed})
+    print("The calculated speed is: <speed>")
